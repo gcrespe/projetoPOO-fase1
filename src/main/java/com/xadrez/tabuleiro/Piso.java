@@ -17,8 +17,7 @@ import java.util.Map;
 public abstract class Piso {
     
    int coordenadas;
-   
-   
+  
    private static Map<Integer, PisoVazio> PISOS_VAZIOS = criarPisos();
    
    private static Map<Integer, PisoVazio> criarPisos(){

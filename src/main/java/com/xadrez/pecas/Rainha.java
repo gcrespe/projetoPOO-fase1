@@ -9,13 +9,13 @@ package com.xadrez.pecas;
  *
  * @author gcres
  */
-public class Cavalo {
+public class Rainha {
     
     public int posicao;
     public boolean capturado = false;
     public boolean cor;
     
-    Cavalo(int posicao, boolean cor){
+    Rainha(int posicao, boolean cor){
         setPosicao(posicao);
         setCor(cor);
     }
@@ -29,14 +29,7 @@ public class Cavalo {
     }
     
     boolean movimentar(int posicao){
-        if(this.posicao + 6 == posicao 
-           || this.posicao + 10 == posicao
-           || this.posicao + 15 == posicao
-           || this.posicao + 17 == posicao
-           || this.posicao - 17 == posicao
-           || this.posicao - 15 == posicao
-           || this.posicao - 10 == posicao
-           || this.posicao - 6 == posicao){
+        if(posicao % 7 == 0 || posicao % 8 == 0 || posicao % 9 == 0 ){
             return true;
         }
         else return false;
