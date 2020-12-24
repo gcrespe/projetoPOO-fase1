@@ -13,9 +13,9 @@ public class Peao {
     
     public int posicao;
     public boolean capturado = false;
-    public boolean cor;
+    public String cor;
     
-    Peao(int posicao, boolean cor){
+    public Peao(int posicao, String cor){
         setPosicao(posicao);
         setCor(cor);
     }
@@ -24,7 +24,7 @@ public class Peao {
         this.posicao = posicao;
     }
     
-    void setCor(boolean cor){
+    void setCor(String cor){
         this.cor = cor;
     }
     
